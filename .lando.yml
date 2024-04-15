@@ -5,6 +5,8 @@ services:
     sslExpose: false
     type: node:18
     command: node server.js
+    build:
+      - npm install
 proxy:
   appserver:
     - domain1.com
